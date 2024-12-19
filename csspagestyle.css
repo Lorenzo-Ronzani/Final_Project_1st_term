@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Funnel Sans", sans-serif;
+    background-color: rgb(192, 216, 238);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+
+.menu-btn ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 60px;
+}
+
+.menu-btn li {
+    display: inline-flex;
+    font-size: 3.8rem;
+    transition: 0.5s ease;
+}
+
+.menu-btn li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.html-icon:hover {
+    color: orange;
+}
+
+.css-icon:hover {
+    color: blue;
+}
+
+.table-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: -60px;
+    padding: 0 10px;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+table th {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #363030;
+    text-transform: uppercase;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #363030;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-btn ul {
+        gap: 30px;
+    }
+
+    .menu-btn li {
+        font-size: 2.5rem;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        position: relative;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btn ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-btn li {
+        font-size: 2rem;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

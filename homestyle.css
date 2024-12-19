@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root {
+    --color-opacity: rgb(148 163 184);
+    --color-principal: #fff;
+}
+
+body {
+    background-color: rgb(15, 23, 42);
+}
+.menu {
+    color: #fff;
+}
+
+.menu p {
+    color: var(--color-opacity);
+}
+
+.menu li {
+    color: var(--color-opacity);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: .1em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-opacity);
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: fixed;
+}
+
+nav {
+    margin-top: 10%;
+    transition: 0.3ms;
+}
+
+nav li a:hover {
+    color: var(--color-principal);
+}
+
+nav li {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.menu-btn  li {
+    display: inline-flex;
+    font-size: 1.8rem;
+    transition: .5s;
+    margin-top: 70%;
+    padding-right: 5%;
+}
+
+.menu h1, h2, p {
+    line-height: 35px;
+}
+
+.menu h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu-btn a {
+    color: var(--color-opacity);
+    transition: .4s ease;
+}
+
+.menu-btn a:hover {
+    color: var(--color-principal);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main {
+    margin-top: 5%;
+    width: 35%;
+    margin-left: 50%;
+    height: 100%;
+}
+
+.about p {
+    color: var(--color-opacity);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style: none;
+}
+
+.experience-container {
+    display: flex;
+    margin-top: 15%;
+    flex-direction: column;
+}
+
+.experiences p {
+    color: var(--color-opacity);
+}
+
+.experience a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.experience a:hover {
+    color: rgb(94, 234, 212);
+}
+
+.experiences {
+    padding-top: 10%;
+}
+
+.resume {
+    margin-top: 5%;
+}
+
+.resume a {
+    transition: .5s ease;
+    font-size: 1.2rem;
+}
+
+.resume a:hover {
+    text-decoration: underline;
+}
+
+.projects-list img {
+    width: 145px;
+    height: 75px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 0 solid #e5e7eb;
+}
+
+.projects {
+    margin-top: 15%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    gap: 15px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.projects-list li {
+    list-style: none;
+}
+
+.project-container a {  
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+.project-container p {
+    color: var(--color-opacity);
+}
+
+.projects-list li {
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border-radius: 8px;
+}
+
+.projects-list li:hover {
+    box-shadow: 0px 4px 8px rgba(148,163,184,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.li-content {
+    padding-left: 5px;
+}
+
+footer p {
+    margin-top: 10%;
+    color: var(--color-opacity);
+}
+
+.project-container:hover a{
+    color: rgb(94, 234, 212);
+}
+
+.projects-list li:hover {
+    background-color: rgba(148, 163, 184, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        position: relative;
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    main {
+        width: 45%;
+        margin-left: 10%;
+    }
+
+    .menu-btn li {
+        display: inline-flex;
+        font-size: 1.6rem;
+        justify-content: center;
+        margin-top: 10%;
+        margin-right: 2px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .menu {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .experience-container {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+    }
+
+    .menu-btn li {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    
+    .menu-btn {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projects-list img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .project-container div {
+        margin-bottom: 15px;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu h2 {
+        font-size: 1.4rem;
+    }
+
+    .projects-list li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding-top: 90px;
+    }
+
+    .menu-btn li {
+        font-size: 1.4rem;
+    }
+
+    .projects-list img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .menu h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu h2 {
+        font-size: 1.2rem;
+    }
+
+    .projects-list li {
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

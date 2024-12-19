@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sheet</title>
+    <link rel="stylesheet" href="csspagestyle.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Honk&family=Raleway:ital,wght@0,600;1,600&display=swap');</style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-btn">
+                <ul>
+                    <li><a href="htmlpage.html" class="html-icon"><i class='bx bxl-html5'></i></a></li>
+                    <li><a href="csspage.html" class="css-icon"><i class='bx bxl-css3' ></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="table-cont">
+                    <table>
+                        <tr>
+                            <th>CSS Selectors</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>element</td>
+                            <td>a</td>
+                            <td>Selects all &lt;a&gt; elements.</td>
+                        </tr>
+                        <tr>
+                            <td>#id</td>
+                            <td>#name</td>
+                            <td>Selects the element with id="name".</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>*</td>
+                            <td>Selects all elements.</td>
+                        </tr>
+                        <tr>
+                            <td>.class</td>
+                            <td>.board <br>p.board</td>
+                            <td>Selects all elements with class="board".
+                                Selects all &lt;p&gt; elements with class="intro".</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="table-cont">
+                    <table>
+                        <tr>
+                            <th>CSS BOX MODEL</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Content </td>
+                            <td>The content of the box, which includes text and images.</td>
+                        </tr>
+                        <tr>
+                            <td>Padding </td>
+                            <td>Padding refers to the transparent space between the element’s content and its border. The background color of an element will also be seen through its padding area if it has one.</td>
+                        </tr>
+                        <tr>
+                            <td>Border </td>
+                            <td>The padding and content are surrounded by a border.</td>
+                        </tr>
+                        <tr>
+                            <td>Margin </td>
+                            <td>Margin refers to the transparent area around the border. The margin area is always transparent; it is unaffected by the element’s background color, but it allows the parent element’s background color to be seen through it.</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="table-cont">
+                    <table>
+                        <tr>
+                            <th>CSS DISPLAY</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>inline</td>
+                            <td>Displays an element as an inline element.</td>
+                        </tr>
+                        <tr>
+                            <td>block </td>
+                            <td>Displays an element as a block element.</td>
+                        </tr>
+                        <tr>
+                            <td>flex</td>
+                            <td>Displays an element as a block-level flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>grid</td>
+                            <td>Displays an element as a block-level grid container.</td>
+                        </tr>
+                        <tr>
+                            <td>inline-block</td>
+                            <td>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.</td>
+                        </tr>
+                        <tr>
+                            <td>inline-flex</td>
+                            <td>Displays an element as an inline-level flex container.</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="csscript.js"></script>
+</body>
+</html>
+
